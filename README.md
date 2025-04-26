@@ -24,7 +24,7 @@ Lebonplan est un site web d'annonces d'offres avec possibilité de :
 ## Installation
 
 ### Prérequis
-- **Apache** : Assurez-vous d'avoir installé un serveur local comme [XAMPP](https://www.apachefriends.org/index.html) ou [MAMP](https://www.mamp.info/).
+- **Apache** : Assurez-vous d'avoir installé un serveur local comme [XAMPP](https://www.apachefriends.org/index.html)
 - **PHP** : Le projet utilise PHP, donc vous devez également avoir PHP installé avec XAMPP ou MAMP.
 - **MySQL** : Une base de données MySQL doit être configurée pour ce projet.
 
@@ -41,22 +41,22 @@ Lebonplan est un site web d'annonces d'offres avec possibilité de :
 
 4. **Créer la base de données** :
    - Ouvrir **phpMyAdmin** via `http://localhost/phpmyadmin/`.
-   - Créer une base de données nommée `lebonplan` (ou un autre nom de votre choix).
+   - Créer une base de données nommée `offre_db` (ou un autre nom de votre choix).
    - Importer le fichier SQL contenant les tables **entreprises** et **offres** dans cette base de données.
 
 5. **Configurer la connexion à la base de données** :
-   - Ouvrez le fichier de configuration pour la connexion à la base de données, généralement situé dans `config/db.php` ou un fichier similaire.
+   - Ouvrez le fichier de configuration pour la connexion à la base de données, généralement situé dans `config/config.php` ou un fichier similaire.
    - Mettez à jour les informations suivantes pour correspondre à votre environnement local :
      ```php
      $host = 'localhost';  // Ou l'adresse de votre serveur de base de données
-     $dbname = 'lebonplan'; // Nom de la base de données
+     $dbname = 'offres_db'; // Nom de la base de données
      $username = 'root';    // Nom d'utilisateur par défaut de MySQL
-     $password = '';        // Mot de passe, généralement vide par défaut sur XAMPP mais j'ait utiliser root
+     $password = 'root';        // Mot de passe, généralement vide par défaut sur XAMPP
      ```
 
 6. **Accéder au projet via votre navigateur** :
    ```
-   http://localhost/nom-du-dossier/ 
+   http://localhost/script/ script(ou votre nom de dossier)
    ```
 
 ### Installation des dépendances (si nécessaire)
@@ -64,6 +64,7 @@ Si des dépendances doivent être installées via Composer, assurez-vous d'avoir
    ```bash
    composer install
    ```
+j'ai pas utiliser de dependances dans ce projet
 
 ## Fonctionnalités principales
 
