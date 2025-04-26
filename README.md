@@ -19,18 +19,50 @@ Lebonplan est un site web d'annonces d'offres avec possibilité de :
 - HTML / CSS
 - JavaScript (menu burger)
 - Serveur local **XAMPP**
+- Base de données **MySQL**
 
 ## Installation
 
-1. Cloner le dépôt sur votre machine locale :
+### Prérequis
+- **Apache** : Assurez-vous d'avoir installé un serveur local comme [XAMPP](https://www.apachefriends.org/index.html) ou [MAMP](https://www.mamp.info/).
+- **PHP** : Le projet utilise PHP, donc vous devez également avoir PHP installé avec XAMPP ou MAMP.
+- **MySQL** : Une base de données MySQL doit être configurée pour ce projet.
+
+### Instructions d'installation en local
+
+1. **Cloner le dépôt** sur votre machine locale :
    ```bash
    git clone [url-du-repo]
    ```
-2. Placer le dossier dans votre serveur local (`htdocs` pour XAMPP)
-3. Lancer Apache via XAMPP
-4. Accéder au projet via votre navigateur :
+
+2. **Placer le dossier du projet** dans le répertoire `htdocs` pour XAMPP (ou dans le dossier correspondant pour MAMP).
+
+3. **Lancer Apache et MySQL** via XAMPP ou MAMP.
+
+4. **Créer la base de données** :
+   - Ouvrir **phpMyAdmin** via `http://localhost/phpmyadmin/`.
+   - Créer une base de données nommée `lebonplan` (ou un autre nom de votre choix).
+   - Importer le fichier SQL contenant les tables **entreprises** et **offres** dans cette base de données.
+
+5. **Configurer la connexion à la base de données** :
+   - Ouvrez le fichier de configuration pour la connexion à la base de données, généralement situé dans `config/db.php` ou un fichier similaire.
+   - Mettez à jour les informations suivantes pour correspondre à votre environnement local :
+     ```php
+     $host = 'localhost';  // Ou l'adresse de votre serveur de base de données
+     $dbname = 'lebonplan'; // Nom de la base de données
+     $username = 'root';    // Nom d'utilisateur par défaut de MySQL
+     $password = '';        // Mot de passe, généralement vide par défaut sur XAMPP
+     ```
+
+6. **Accéder au projet via votre navigateur** :
    ```
-   http://localhost/script/
+   http://localhost/nom-du-dossier/
+   ```
+
+### Installation des dépendances (si nécessaire)
+Si des dépendances doivent être installées via Composer, assurez-vous d'avoir **Composer** installé sur votre machine. Pour récupérer les dépendances, exécutez la commande suivante dans le répertoire du projet :
+   ```bash
+   composer install
    ```
 
 ## Fonctionnalités principales
@@ -51,6 +83,10 @@ Lebonplan est un site web d'annonces d'offres avec possibilité de :
 - `/script/controllers/` : Gestion de la wishlist, les offres, les entreprises
 - `/script/models/` : Gestion de la wishlist, les offres, les entreprises
 
+## Version en ligne
+
+Vous pouvez accéder à la version en ligne du site à l'adresse suivante :
+- [Lebonplan en ligne](http://votre-lien-en-ligne.com) *(Remplacez ce lien par celui de votre site déployé en ligne)*
 
 ## Auteur
 
@@ -60,4 +96,4 @@ Contact : [ekabore929@gmail.com](mailto:ekabore929@gmail.com)
 ---
 
 **Remarque** : Ce projet est uniquement à but éducatif. Il ne collecte aucune donnée personnelle.  
-**Note** : La fonctionnalité d'ajout à la wishlist n'est pas terminée car le projet n'est pas encore connecté à une base de données.
+**Note** : La fonctionnalité d'ajout à la wishlist n'est pas terminée car le projet n'est pas encore connecté à une base de données complète.
