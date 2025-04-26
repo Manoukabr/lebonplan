@@ -51,12 +51,12 @@ Lebonplan est un site web d'annonces d'offres avec possibilité de :
      $host = 'localhost';  // Ou l'adresse de votre serveur de base de données
      $dbname = 'lebonplan'; // Nom de la base de données
      $username = 'root';    // Nom d'utilisateur par défaut de MySQL
-     $password = '';        // Mot de passe, généralement vide par défaut sur XAMPP
+     $password = '';        // Mot de passe, généralement vide par défaut sur XAMPP mais j'ait utiliser root
      ```
 
 6. **Accéder au projet via votre navigateur** :
    ```
-   http://localhost/nom-du-dossier/
+   http://localhost/nom-du-dossier/ 
    ```
 
 ### Installation des dépendances (si nécessaire)
@@ -67,10 +67,10 @@ Si des dépendances doivent être installées via Composer, assurez-vous d'avoir
 
 ## Fonctionnalités principales
 
-- **Accueil statique** affichant toutes les offres
+- **Accueil statique** affichant un formulaire simple
 - **Formulaire d'inscription personnalisé** pour chaque offre cliquée
-- **Inscription et connexion** avec des champs correctement paramétrés
-- **Mentions légales** accessibles depuis le menu
+- **Inscription et connexion** je ne l'ai pas configurer
+- **Mentions légales** accessibles en bas de page
 - **Menu burger** responsive fonctionnant en JavaScript
 - **Wishlist** :
   - Possibilité d'ajouter / retirer des offres
