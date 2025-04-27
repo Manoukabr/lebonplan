@@ -87,7 +87,7 @@ j'ai pas utiliser de dependances dans ce projet
 ## Version en ligne
 
 Vous pouvez accéder à la version en ligne du site à l'adresse suivante :
-- [Lebonplan en ligne] https://kabore.alwaysdata.net/index.php?action=wishlist
+- [Lebonplan en ligne] https://kabore.alwaysdata.net/index.php?action=home
 
 ## Auteur
 
