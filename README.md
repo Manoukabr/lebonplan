@@ -9,7 +9,7 @@ Lebonplan est un site web d'annonces d'offres avec possibilité de :
 - Consulter les offres disponibles (Accueil **statique**)
 - Cliquer sur une offre pour accéder à un **formulaire personnalisé** adapté à l'offre choisie
 - Ajouter des offres à une wishlist personnelle (**ajout non fonctionnel actuellement**)
-- Gérer son compte (inscription / connexion)
+- Gérer son compte (inscription / connexion)(**non fonctionnel actuellement**)
 - Accéder aux mentions légales
 - Naviguer sur toutes les pages via un **menu burger responsive** (réalisé en JavaScript)
 
