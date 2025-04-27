@@ -12,7 +12,7 @@ Lebonplan est un site web d'annonces d'offres avec possibilité de :
 - Gérer son compte (inscription / connexion)(**non fonctionnel actuellement**)
 - Accéder aux mentions légales
 - Naviguer sur toutes les pages via un **menu burger responsive** (réalisé en JavaScript)
-
+- Back-to-top Button disponible sur la page statique sur les pages : offres de stages, les entreprises,les différents formulaires de candidatures.
 ## Technologies utilisées
 
 - PHP
