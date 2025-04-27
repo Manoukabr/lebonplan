@@ -37,7 +37,7 @@ Lebonplan est un site web d'annonces d'offres avec possibilité de :
 
 2. **Placer le dossier du projet** dans le répertoire `htdocs` pour XAMPP (ou dans le dossier correspondant pour MAMP).
 
-3. **Lancer Apache et MySQL** via XAMPP ou MAMP.
+3. **Lancer Apache et MySQL** via XAMPP .
 
 4. **Créer la base de données** :
    - Ouvrir **phpMyAdmin** via `http://localhost/phpmyadmin/`.
@@ -83,6 +83,10 @@ j'ai pas utiliser de dependances dans ce projet
 - `/script/views/` : Gestion de la wishlist, les offres, les entreprises
 - `/script/controllers/` : Gestion de la wishlist, les offres, les entreprises
 - `/script/models/` : Gestion de la wishlist, les offres, les entreprises
+- `index/` : Gestion de la wishlist, les offres, les entreprises et des autres focntionalités
+- /composer.json est vide
+- .htaccess est vide
+- /README.md
 
 ## Version en ligne
 
