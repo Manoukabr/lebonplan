@@ -84,9 +84,9 @@ j'ai pas utiliser de dependances dans ce projet
 - `/script/controllers/` : Gestion de la wishlist, les offres, les entreprises
 - `/script/models/` : Gestion de la wishlist, les offres, les entreprises
 - `index/` : Gestion de la wishlist, les offres, les entreprises et des autres focntionalités
-- /composer.json est vide
-- .htaccess est vide
-- /README.md
+- `/composer.json/` est vide
+- `/.htaccess` est vide
+- `/README.md/`
 
 ## Version en ligne
 
